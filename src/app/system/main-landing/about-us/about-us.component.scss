@@ -1,4 +1,29 @@
 .wrapper {
-  height: 200px;
-  border: 2px dotted #006eff;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .container {
+    width: 600px;
+    color: #4a4a4a;
+    font-family: 'Muli', sans-serif;
+    text-align: center;
+    font-size: 18px;
+
+    p {
+      margin: 20px 0;
+    }
+
+    .picture {
+      width: 200px;
+      height: fit-content;
+      margin: 0 auto;
+
+      img {
+        max-width: 100%;
+      }
+    }
+
+  }
 }

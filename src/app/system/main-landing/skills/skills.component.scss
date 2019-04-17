@@ -1,4 +1,25 @@
 .wrapper {
-  height: 300px;
-  border: 2px solid #429500;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  background: url("../../../../assets/desk.PNG") no-repeat no-repeat right rgb(250, 231, 230);
+  background-size: contain;
+  .container {
+    width: 600px;
+    padding: 10px;
+    margin-left: 100px;
+    font-family: 'Muli-bold', sans-serif;
+
+    color: #4a4a4a;
+    h2 {
+      margin-bottom: 30px;
+
+    }
+
+    p {
+      margin: 15px 0 10px 0;
+      text-transform: uppercase;
+    }
+  }
 }
+

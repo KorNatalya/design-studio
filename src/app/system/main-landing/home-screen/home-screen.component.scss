@@ -1,5 +1,6 @@
 .wrapper {
-  height: 500px;
+  //height: 100vh;
+  height: 600px;
   background: url("../../../../assets/bg.jpg") no-repeat no-repeat left #dbdbe2;
   background-size: cover;
   padding: 20px;
@@ -32,6 +33,7 @@
           display: flex;
           padding: 0;
 
+
           .active-link {
             color: #008383;
             font-weight: bold;
@@ -42,6 +44,7 @@
             font-size: 16px;
             font-family: 'Muli', sans-serif;
             cursor: pointer;
+            color: #4a4a4a;
           }
 
           mat-list-item:hover {
@@ -53,7 +56,8 @@
 
     .content {
       float: right;
-      margin-top: 60px;
+      //margin-top: calc(100vh/4);
+      margin-top: 80px;
       width: 400px;
 
 
