@@ -1,5 +1,29 @@
 <div class="wrapper">
-  <p>
-    portfolio works!
-  </p>
+  <div class="container">
+    <div class="statistics">
+      <mat-list>
+        <mat-list-item *ngFor="let folder of folders">
+          <mat-icon mat-list-icon>{{folder.icon}}</mat-icon>
+          <h3 mat-line>{{folder.number}}</h3>
+          <p mat-line> {{folder.description}} </p>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+      </mat-list>
+
+    </div>
+    <div class="products">
+      <mat-grid-list cols="4" rowHeight="230px">
+        <mat-grid-tile
+          *ngFor="let tile of tiles"
+          [colspan]="tile.cols"
+          [rowspan]="tile.rows"
+        >
+          <div class="picture">
+            <img alt="product" src="{{tile.img}}">
+          </div>
+
+        </mat-grid-tile>
+      </mat-grid-list>
+    </div>
+  </div>
 </div>

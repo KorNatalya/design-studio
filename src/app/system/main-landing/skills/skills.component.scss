@@ -5,21 +5,26 @@
   background: url("../../../../assets/desk.PNG") no-repeat no-repeat right rgb(250, 231, 230);
   background-size: contain;
   .container {
-    width: 600px;
-    padding: 10px;
-    margin-left: 100px;
+    margin: 0 auto;
+    width: 1140px;
+    padding: 20px;
     font-family: 'Muli-bold', sans-serif;
-
     color: #4a4a4a;
-    h2 {
-      margin-bottom: 30px;
 
+    .progress-bars {
+
+      width: 650px;
+      h2 {
+        margin-bottom: 30px;
+
+      }
+
+      p {
+        margin: 15px 0 10px 0;
+        text-transform: uppercase;
+      }
     }
 
-    p {
-      margin: 15px 0 10px 0;
-      text-transform: uppercase;
-    }
   }
 }
 

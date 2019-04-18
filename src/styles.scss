@@ -5,11 +5,21 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Muli', sans-serif;
 }
 
 html, body {
   height: 100%;
   width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 @font-face {
@@ -41,10 +51,11 @@ html, body {
 @include mat-core();
 
 
-$primary: mat-palette($mat-cyan, 800);
+$primary: mat-palette($mat-cyan, 700, 200);
+$warn: mat-palette($mat-pink, 500);
 $accent: mat-palette($mat-orange,200);
 
-$theme: mat-dark-theme($primary, $accent);
+$theme: mat-light-theme($primary, $accent, $warn);
 
 @include angular-material-theme($theme);
 

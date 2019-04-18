@@ -1,0 +1,29 @@
+<div class="wrapper">
+  <div class="container">
+    <h2>Need a Project?</h2>
+    <p>Lorem ipsum dolor sit amet, adipisicing elit. Dolores facere facilis fugit id, incidunt, laboriosam,
+      magnam minima nisi obcaecati quas quis quisquam quod sint soluta unde voluptas
+      voluptatum.</p>
+
+    <form (ngSubmit)="onSubmit()" [formGroup]="profileForm">
+      <div class="row">
+        <mat-form-field>
+          <input formControlName="name" matInput placeholder="Your Name">
+        </mat-form-field>
+        <mat-form-field>
+          <input [formControl]="email" matInput placeholder="Enter your email" required>
+          <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+        </mat-form-field>
+      </div>
+
+      <mat-form-field>
+        <input formControlName="title" matInput placeholder="Your Title">
+      </mat-form-field>
+
+      <mat-form-field>
+        <textarea formControlName="comment" matInput placeholder="Your Comment" rows="6"></textarea>
+      </mat-form-field>
+      <button color="primary" mat-raised-button type="submit">Send Message</button>
+    </form>
+  </div>
+</div>

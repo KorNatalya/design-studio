@@ -7,7 +7,16 @@ import { AboutUsComponent } from './main-landing/about-us/about-us.component';
 import { SkillsComponent } from './main-landing/skills/skills.component';
 import { PortfolioComponent } from './main-landing/portfolio/portfolio.component';
 import { FooterComponent } from './main-landing/footer/footer.component';
-import {MatButtonModule, MatListModule, MatProgressBarModule} from '@angular/material';
+import {
+  MatButtonModule,
+  MatFormFieldModule,
+  MatGridListModule,
+  MatIconModule, MatInputModule,
+  MatListModule,
+  MatProgressBarModule
+} from '@angular/material';
+import { FormComponent } from './main-landing/form/form.component';
+import {ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   imports: [
@@ -15,7 +24,12 @@ import {MatButtonModule, MatListModule, MatProgressBarModule} from '@angular/mat
     SystemRoutingModule,
     MatListModule,
     MatButtonModule,
-    MatProgressBarModule
+    MatProgressBarModule,
+    MatGridListModule,
+    MatIconModule,
+    ReactiveFormsModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   declarations: [
     SystemComponent,
@@ -23,7 +37,8 @@ import {MatButtonModule, MatListModule, MatProgressBarModule} from '@angular/mat
     AboutUsComponent,
     SkillsComponent,
     PortfolioComponent,
-    FooterComponent
+    FooterComponent,
+    FormComponent
   ],
   providers: []
 })
