@@ -8,15 +8,10 @@
   line-height: 1.5;
 
   .container {
-<<<<<<< HEAD
+
     width: 1140px;
     display: flex;
     justify-content: space-between;
-=======
-    width: 940px;
-    display: flex;
-    justify-content: space-around;
->>>>>>> c675c1f8e59440895599c46fddf95da16b26e3e0
     align-items: flex-start;
     padding: 20px;
 
@@ -26,23 +21,15 @@
 
     .usefullinks {
       columns: 2;
-<<<<<<< HEAD
 
-=======
->>>>>>> c675c1f8e59440895599c46fddf95da16b26e3e0
       li {
         margin: 0 10px;
       }
     }
-<<<<<<< HEAD
   }
 }
 
 li:hover {
   font-weight: bold;
-=======
-
-
-  }
->>>>>>> c675c1f8e59440895599c46fddf95da16b26e3e0
 }
+
