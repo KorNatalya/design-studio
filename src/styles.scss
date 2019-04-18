@@ -51,8 +51,12 @@ a {
 @include mat-core();
 
 
+<<<<<<< HEAD
 $primary: mat-palette($mat-cyan, 700, 200);
 $warn: mat-palette($mat-pink, 500);
+=======
+$primary: mat-palette($mat-cyan, 800, 200);
+>>>>>>> c675c1f8e59440895599c46fddf95da16b26e3e0
 $accent: mat-palette($mat-orange,200);
 
 $theme: mat-light-theme($primary, $accent, $warn);
