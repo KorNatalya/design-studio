@@ -21,6 +21,7 @@ import { ContactPageComponent } from './contact-page/contact-page.component';
 import {MainLandingComponent} from './main-landing/main-landing.component';
 import { HeaderComponent } from './shared/components/header/header.component';
 import { FeedbackFormComponent } from './shared/components/feedback-form/feedback-form.component';
+import { WorkProcessComponent } from './main-landing/work-process/work-process.component';
 
 @NgModule({
   imports: [
@@ -46,7 +47,8 @@ import { FeedbackFormComponent } from './shared/components/feedback-form/feedbac
     ContactPageComponent,
     MainLandingComponent,
     HeaderComponent,
-    FeedbackFormComponent
+    FeedbackFormComponent,
+    WorkProcessComponent
   ],
   providers: []
 })
