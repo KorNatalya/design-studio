@@ -19,9 +19,8 @@
           [rowspan]="tile.rows"
         >
           <div class="picture">
-            <img alt="product" src="{{tile.img}}">
+            <img alt="product" [src]="tile.img">
           </div>
-
         </mat-grid-tile>
       </mat-grid-list>
     </div>

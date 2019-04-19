@@ -6,7 +6,7 @@ import { HomeScreenComponent } from './main-landing/home-screen/home-screen.comp
 import { AboutUsComponent } from './main-landing/about-us/about-us.component';
 import { SkillsComponent } from './main-landing/skills/skills.component';
 import { PortfolioComponent } from './main-landing/portfolio/portfolio.component';
-import { FooterComponent } from './main-landing/footer/footer.component';
+import { FooterComponent } from './shared/components/footer/footer.component';
 import {
   MatButtonModule,
   MatFormFieldModule,
@@ -17,6 +17,9 @@ import {
 } from '@angular/material';
 import { FormComponent } from './main-landing/form/form.component';
 import {ReactiveFormsModule} from '@angular/forms';
+import { ContactPageComponent } from './contact-page/contact-page.component';
+import {MainLandingComponent} from './main-landing/main-landing.component';
+import { HeaderComponent } from './shared/components/header/header.component';
 
 @NgModule({
   imports: [
@@ -38,7 +41,10 @@ import {ReactiveFormsModule} from '@angular/forms';
     SkillsComponent,
     PortfolioComponent,
     FooterComponent,
-    FormComponent
+    FormComponent,
+    ContactPageComponent,
+    MainLandingComponent,
+    HeaderComponent
   ],
   providers: []
 })
