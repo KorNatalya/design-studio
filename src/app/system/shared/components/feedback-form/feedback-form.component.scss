@@ -1,0 +1,27 @@
+form {
+  display: flex;
+  flex-direction: column;
+  min-width: 500px;
+
+
+  .row {
+    display: flex;
+    flex-flow: row nowrap;
+
+    .mat-form-field {
+      width: 50%;
+    }
+
+    .mat-form-field:first-child {
+      margin-right: 30px;
+    }
+  }
+
+  button {
+    width: fit-content;
+    text-transform: uppercase;
+    margin: 20px auto;
+    padding: 10px 20px;
+  }
+}
+

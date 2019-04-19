@@ -20,6 +20,7 @@ import {ReactiveFormsModule} from '@angular/forms';
 import { ContactPageComponent } from './contact-page/contact-page.component';
 import {MainLandingComponent} from './main-landing/main-landing.component';
 import { HeaderComponent } from './shared/components/header/header.component';
+import { FeedbackFormComponent } from './shared/components/feedback-form/feedback-form.component';
 
 @NgModule({
   imports: [
@@ -44,7 +45,8 @@ import { HeaderComponent } from './shared/components/header/header.component';
     FormComponent,
     ContactPageComponent,
     MainLandingComponent,
-    HeaderComponent
+    HeaderComponent,
+    FeedbackFormComponent
   ],
   providers: []
 })
