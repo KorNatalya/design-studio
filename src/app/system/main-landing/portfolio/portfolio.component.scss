@@ -1,8 +1,9 @@
 .wrapper {
+  background-color: #f5f5f5;
   .container {
     .statistics {
       height: 200px;
-      background-color: rgb(0, 129, 145);;
+      background-color: rgb(0, 129, 145);
       display: flex;
       justify-content: center;
       align-items: center;
@@ -33,17 +34,29 @@
     }
 
     .products {
-      width: 1140px;
-      margin: 0 auto;
 
       .picture {
-        width: content-box;
-        height: content-box;
+        //width: content-box;
+        height: 400px;
 
         img {
           max-height: 100%;
-          max-width: 100%;
+          //max-width: 100%;
         }
+      }
+    }
+    .more-work-button {
+      height: 80px;
+      background-color: #f5f5f5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      a {
+        text-transform: uppercase;
+        color: #7f7f7f;
+      }
+      a:hover {
+        font-weight: bold;
       }
     }
   }

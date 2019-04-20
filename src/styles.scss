@@ -8,9 +8,10 @@
   font-family: 'Muli', sans-serif;
 }
 
-html, body {
+body {
   height: 100%;
   width: 100%;
+  color: #4a4a4a;
 }
 
 ul {
@@ -35,7 +36,6 @@ a {
   src: url('./font/Muli-Light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
-
 }
 
 @font-face {

@@ -1,5 +1,4 @@
 .wrapper {
-  background-color: rgb(240, 241, 245);
   padding: 20px;
   display: flex;
   align-items: center;
@@ -7,27 +6,36 @@
 
   .container {
     width: 1140px;
-    color: #4a4a4a;
-    font-family: 'Muli', sans-serif;
     display: flex;
-    justify-content: space-between;
     margin: 180px 0 40px 0;
+    flex-direction: column;
 
-    .contact-info {
-      width: 500px;
-      margin-right: 40px;
+    .contact-info-wrap {
+      display: flex;
+      justify-content: space-between;
 
-      h2 {
-        margin-bottom: 20px;
-      }
+      .contact-info {
+        width: 500px;
+        margin-right: 40px;
 
-      p {
-        margin-bottom: 10px;
+        h2 {
+          margin-bottom: 20px;
+        }
 
-        span {
-          font-weight: bold;
+        p {
+          margin-bottom: 10px;
+
+          span {
+            font-weight: bold;
+          }
         }
       }
+    }
+
+    #layer {
+      margin-top: 30px;
+      height: 350px;
+      width: 100%;
     }
   }
 }

@@ -1,5 +1,5 @@
-<div class="wrapper">
-  <div class="container">
+<div class="footer-wrapper">
+  <div class="footer-container">
     <div class="coryright">
       <h3>Design Studio Inc.</h3>
       <p>&copy; 2019 DS. All rights </p>
@@ -9,13 +9,13 @@
       <p>+77 888 999 555</p>
     </div>
     <ul class="usefullinks">
-      <li><a routerLink=".">Projects</a></li>
+      <li><a [routerLink]="['/system', 'projects-page']">Projects</a></li>
       <li><a routerLink=".">About</a></li>
       <li><a routerLink=".">Services</a></li>
       <li><a routerLink=".">Career</a></li>
       <li><a routerLink=".">News</a></li>
       <li><a routerLink=".">Events</a></li>
-      <li><a routerLink=".">Contact</a></li>
+      <li><a [routerLink]="['/system', 'contact-page']">Contact</a></li>
       <li><a routerLink=".">Legals</a></li>
     </ul>
     <ul class="socialmedia">
@@ -23,7 +23,5 @@
       <li><a routerLink=".">Twitter</a></li>
       <li><a routerLink=".">Instagram</a></li>
     </ul>
-
   </div>
-
 </div>

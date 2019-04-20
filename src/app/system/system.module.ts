@@ -17,11 +17,12 @@ import {
 } from '@angular/material';
 import { FormComponent } from './main-landing/form/form.component';
 import {ReactiveFormsModule} from '@angular/forms';
-import { ContactPageComponent } from './contact-page/contact-page.component';
 import {MainLandingComponent} from './main-landing/main-landing.component';
 import { HeaderComponent } from './shared/components/header/header.component';
 import { FeedbackFormComponent } from './shared/components/feedback-form/feedback-form.component';
 import { WorkProcessComponent } from './main-landing/work-process/work-process.component';
+import { ProjectsPageComponent } from './projects-page/projects-page.component';
+import {ContactPageComponent} from './contact-page/contact-page.component';
 
 @NgModule({
   imports: [
@@ -48,7 +49,8 @@ import { WorkProcessComponent } from './main-landing/work-process/work-process.c
     MainLandingComponent,
     HeaderComponent,
     FeedbackFormComponent,
-    WorkProcessComponent
+    WorkProcessComponent,
+    ProjectsPageComponent
   ],
   providers: []
 })
