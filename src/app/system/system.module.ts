@@ -23,6 +23,8 @@ import { FeedbackFormComponent } from './shared/components/feedback-form/feedbac
 import { WorkProcessComponent } from './main-landing/work-process/work-process.component';
 import { ProjectsPageComponent } from './projects-page/projects-page.component';
 import {ContactPageComponent} from './contact-page/contact-page.component';
+import { CarouselComponent } from './main-landing/carousel/carousel.component';
+import {CarouselModule} from 'ngx-bootstrap';
 
 @NgModule({
   imports: [
@@ -35,7 +37,8 @@ import {ContactPageComponent} from './contact-page/contact-page.component';
     MatIconModule,
     ReactiveFormsModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    CarouselModule,
   ],
   declarations: [
     SystemComponent,
@@ -50,7 +53,8 @@ import {ContactPageComponent} from './contact-page/contact-page.component';
     HeaderComponent,
     FeedbackFormComponent,
     WorkProcessComponent,
-    ProjectsPageComponent
+    ProjectsPageComponent,
+    CarouselComponent
   ],
   providers: []
 })
