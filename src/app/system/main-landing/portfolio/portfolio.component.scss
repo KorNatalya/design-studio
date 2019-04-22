@@ -1,48 +1,21 @@
 .wrapper {
   background-color: #f5f5f5;
-
-  .protfolio-container {
-    width: 100%;
-
-    .statistics {
-      height: 200px;
-      background-color: rgb(0, 129, 145);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      .mat-list {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        .mat-list-item {
-          margin: 0 20px;
-          color: whitesmoke;
-
-          .mat-icon {
-            font-size: 30px;
-          }
-
-          h3 {
-            font-family: Muli-bold, sans-serif;
-            font-size: 22px;
-          }
-
-          p {
-            font-size: 18px;
-          }
-        }
-      }
-    }
+  width: 100%;
 
     .products {
+      width: 940px;
+      margin: 0 auto;
 
       .picture {
-        height: 400px;
+        height: 250px;
 
         img {
           max-height: 100%;
+          transition: all .3s ease-in;
+        }
+        img:hover {
+          filter: saturate(230%);
+          transform: scale(1.2, 1.2);
         }
       }
     }
@@ -64,5 +37,4 @@
       }
     }
   }
-}
 

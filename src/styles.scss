@@ -30,6 +30,11 @@ a:hover {
   color: inherit;
 }
 
+mat-list-item {
+  border:none;
+  outline: none;
+}
+
 @font-face {
   font-family: 'Muli';
   src: url('./font/Muli-Regular.ttf') format('truetype');

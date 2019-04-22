@@ -25,6 +25,8 @@ import { ProjectsPageComponent } from './projects-page/projects-page.component';
 import {ContactPageComponent} from './contact-page/contact-page.component';
 import { CarouselComponent } from './main-landing/carousel/carousel.component';
 import {CarouselModule} from 'ngx-bootstrap';
+import { AboutPageComponent } from './about-page/about-page.component';
+import { StatisticsComponent } from './shared/components/statistics/statistics.component';
 
 @NgModule({
   imports: [
@@ -54,7 +56,9 @@ import {CarouselModule} from 'ngx-bootstrap';
     FeedbackFormComponent,
     WorkProcessComponent,
     ProjectsPageComponent,
-    CarouselComponent
+    CarouselComponent,
+    AboutPageComponent,
+    StatisticsComponent
   ],
   providers: []
 })

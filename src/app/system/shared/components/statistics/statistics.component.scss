@@ -1,0 +1,31 @@
+.statistics {
+  height: 200px;
+  background-color: rgb(0, 129, 145);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .mat-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .mat-list-item {
+      margin: 0 20px;
+      color: whitesmoke;
+
+      .mat-icon {
+        font-size: 30px;
+      }
+
+      h3 {
+        font-family: Muli-bold, sans-serif;
+        font-size: 22px;
+      }
+
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+}

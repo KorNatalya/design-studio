@@ -8,7 +8,7 @@
       </div>
       <nav>
         <mat-list role="list">
-          <mat-list-item class="active-link" role="listitem">About</mat-list-item>
+          <mat-list-item [routerLink]="['/system', 'about-page']" class="active-link" role="listitem">About</mat-list-item>
           <mat-list-item [routerLink]="['/system', 'projects-page']" role="listitem">Work</mat-list-item>
           <mat-list-item role="listitem">Process</mat-list-item>
           <mat-list-item role="listitem">Services</mat-list-item>

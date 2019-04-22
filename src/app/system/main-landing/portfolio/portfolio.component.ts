@@ -6,12 +6,6 @@ export interface Tile {
   img: string;
 }
 
-export interface Section {
-  number: number;
-  description: string;
-  icon: string;
-}
-
 @Component({
   selector: 'app-portfolio',
   templateUrl: './portfolio.component.html',
@@ -21,38 +15,14 @@ export class PortfolioComponent implements OnInit {
 
 
   tiles: Tile[] = [
-    {cols: 1, rows: 1, img: '../../../../assets/products/1.jpg'},
-    {cols: 1, rows: 1, img: '../../../../assets/products/2.jpg'},
-    {cols: 1, rows: 1, img: '../../../../assets/products/3.jpg'},
-    {cols: 1, rows: 1, img: '../../../../assets/products/4.jpg'},
-    {cols: 1, rows: 1, img: '../../../../assets/products/5.jpg'},
-    {cols: 1, rows: 1, img: '../../../../assets/products/6.jpg'},
-    {cols: 1, rows: 1, img: '../../../../assets/products/7.jpg'},
-    {cols: 1, rows: 1, img: '../../../../assets/products/8.jpg'},
-  ];
-
-  folders: Section[] = [
-    {
-      number: 547,
-      description: 'Projects Completed',
-      icon: 'assignment_turned_in',
-    },
-    {
-      number: 2410,
-      description: 'Working Hours',
-      icon: 'alarm',
-    },
-    {
-      number: 490,
-      description: 'Positive Feedback',
-      icon: 'grade',
-    }
-    ,
-    {
-      number: 645,
-      description: 'Happy Clients',
-      icon: 'favorite_border',
-    }
+    {cols: 1, rows: 1, img: '../../../../assets/products/1_small.jpg'},
+    {cols: 1, rows: 1, img: '../../../../assets/products/2_small.jpg'},
+    {cols: 1, rows: 1, img: '../../../../assets/products/3_small.jpg'},
+    {cols: 1, rows: 1, img: '../../../../assets/products/4_small.jpg'},
+    {cols: 1, rows: 1, img: '../../../../assets/products/5_small.jpg'},
+    {cols: 1, rows: 1, img: '../../../../assets/products/6_small.jpg'},
+    {cols: 1, rows: 1, img: '../../../../assets/products/7_small.jpg'},
+    {cols: 1, rows: 1, img: '../../../../assets/products/8_small.jpg'},
   ];
 
   constructor() {
