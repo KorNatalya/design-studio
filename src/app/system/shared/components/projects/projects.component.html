@@ -1,0 +1,18 @@
+<div class="wrapper">
+  <mat-grid-list cols="4" rowHeight="230px">
+    <mat-grid-tile
+      *ngFor="let tile of tiles"
+      [colspan]="tile.cols"
+      [rowspan]="tile.rows"
+    >
+      <div class="picture-of-product">
+        <img [src]="tile.img" alt="product">
+        <div class="overlay">
+          <div class="picture">
+            <img alt="Eye" src="../../../../../assets/eye-white-svg.svg">
+          </div>
+        </div>
+      </div>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>

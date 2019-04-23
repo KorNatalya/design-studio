@@ -27,6 +27,7 @@ import { CarouselComponent } from './main-landing/carousel/carousel.component';
 import {CarouselModule} from 'ngx-bootstrap';
 import { AboutPageComponent } from './about-page/about-page.component';
 import { StatisticsComponent } from './shared/components/statistics/statistics.component';
+import { ProjectsComponent } from './shared/components/projects/projects.component';
 
 @NgModule({
   imports: [
@@ -58,7 +59,8 @@ import { StatisticsComponent } from './shared/components/statistics/statistics.c
     ProjectsPageComponent,
     CarouselComponent,
     AboutPageComponent,
-    StatisticsComponent
+    StatisticsComponent,
+    ProjectsComponent
   ],
   providers: []
 })

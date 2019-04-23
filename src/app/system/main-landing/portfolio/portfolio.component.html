@@ -1,17 +1,8 @@
 <div class="wrapper">
-    <div class="products">
-      <mat-grid-list cols="4" rowHeight="230px">
-        <mat-grid-tile
-          *ngFor="let tile of tiles"
-          [colspan]="tile.cols"
-          [rowspan]="tile.rows"
-        >
-          <div class="picture">
-            <img alt="product" [src]="tile.img">
-          </div>
-        </mat-grid-tile>
-      </mat-grid-list>
-    </div>
+  <div class="projects-wrapper">
+    <app-projects></app-projects>
+  </div>
+
     <div class="more-work-button">
       <a [routerLink]="['/system', 'projects-page']">Load More Work</a>
     </div>

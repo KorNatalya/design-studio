@@ -1,0 +1,49 @@
+.wrapper {
+  width: 990px;
+  margin: 0 auto;
+
+  .picture-of-product {
+    height: 250px;
+
+    img {
+      max-height: 100%;
+      transition: all .3s ease-in;
+      z-index: 10;
+      cursor: pointer;
+      position: relative;
+    }
+
+    .overlay {
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.25);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all .3s ease-in-out;
+
+      z-index: 11;
+
+      .picture {
+        width: 75px;
+        height: 37px;
+
+        img {
+          color: whitesmoke;
+          max-width: 100%;
+          max-height: 100%;
+        }
+      }
+    }
+
+    .overlay:hover {
+      opacity: 1;
+      cursor: pointer;
+    }
+  }
+}
+
