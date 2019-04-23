@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-declare let L;
+import * as L from 'leaflet';
 
 @Component({
   selector: 'app-contact-page',

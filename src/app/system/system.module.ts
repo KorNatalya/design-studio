@@ -8,7 +8,7 @@ import { SkillsComponent } from './main-landing/skills/skills.component';
 import { PortfolioComponent } from './main-landing/portfolio/portfolio.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
 import {
-  MatButtonModule,
+  MatButtonModule, MatDialogModule,
   MatFormFieldModule,
   MatGridListModule,
   MatIconModule, MatInputModule,
@@ -28,6 +28,7 @@ import {CarouselModule} from 'ngx-bootstrap';
 import { AboutPageComponent } from './about-page/about-page.component';
 import { StatisticsComponent } from './shared/components/statistics/statistics.component';
 import { ProjectsComponent } from './shared/components/projects/projects.component';
+import { ImageViewerComponent } from './shared/components/projects/image-viewer/image-viewer.component';
 
 @NgModule({
   imports: [
@@ -42,6 +43,7 @@ import { ProjectsComponent } from './shared/components/projects/projects.compone
     MatFormFieldModule,
     MatInputModule,
     CarouselModule,
+    MatDialogModule,
   ],
   declarations: [
     SystemComponent,
@@ -60,9 +62,13 @@ import { ProjectsComponent } from './shared/components/projects/projects.compone
     CarouselComponent,
     AboutPageComponent,
     StatisticsComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    ImageViewerComponent,
   ],
-  providers: []
+  providers: [],
+  entryComponents: [
+    ImageViewerComponent,
+  ],
 })
 
 export class SystemModule {
