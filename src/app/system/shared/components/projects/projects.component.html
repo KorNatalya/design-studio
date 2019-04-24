@@ -7,7 +7,7 @@
     >
       <div class="picture-of-product">
         <img [src]="getSmallImage(tile.id)" alt="product">
-        <div class="overlay" (click)="openModal(tile.id)">
+        <div (click)="openModal(tile.id)" class="overlay">
           <div class="picture">
             <img alt="Eye" src="../../../../../assets/eye-white-svg.svg">
           </div>
