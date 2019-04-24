@@ -1,0 +1,12 @@
+<div class="wrapper">
+  <mat-grid-list cols="4" rowHeight="200px">
+    <mat-grid-tile *ngFor="let tile of tiles"
+                   [colspan]="tile.cols"
+                   [rowspan]="tile.rows"
+                   class="services">
+      <i class="material-icons">{{tile.image}}</i>
+      <h6>{{tile.header}}</h6>
+      <p>{{tile.text}}</p>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>

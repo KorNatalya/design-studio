@@ -31,8 +31,7 @@
           display: flex;
           padding: 0;
 
-
-          .active-link {
+          .active {
             color: rgb(0, 151, 167);
             font-weight: bold;
           }
@@ -43,6 +42,8 @@
             font-family: 'Muli', sans-serif;
             cursor: pointer;
             color: #4a4a4a;
+
+
           }
 
           mat-list-item:hover {

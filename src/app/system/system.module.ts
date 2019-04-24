@@ -29,6 +29,7 @@ import { AboutPageComponent } from './about-page/about-page.component';
 import { StatisticsComponent } from './shared/components/statistics/statistics.component';
 import { ProjectsComponent } from './shared/components/projects/projects.component';
 import { ImageViewerComponent } from './shared/components/projects/image-viewer/image-viewer.component';
+import { RangeOfServicesComponent } from './main-landing/range-of-services/range-of-services.component';
 
 @NgModule({
   imports: [
@@ -64,6 +65,7 @@ import { ImageViewerComponent } from './shared/components/projects/image-viewer/
     StatisticsComponent,
     ProjectsComponent,
     ImageViewerComponent,
+    RangeOfServicesComponent,
   ],
   providers: [],
   entryComponents: [

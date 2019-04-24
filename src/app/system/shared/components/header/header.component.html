@@ -8,11 +8,24 @@
       </div>
       <nav>
         <mat-list role="list">
-          <mat-list-item [routerLink]="['/system', 'about-page']" class="active-link" role="listitem">About</mat-list-item>
-          <mat-list-item [routerLink]="['/system', 'projects-page']" role="listitem">Work</mat-list-item>
-          <mat-list-item role="listitem">Process</mat-list-item>
-          <mat-list-item role="listitem">Services</mat-list-item>
-          <mat-list-item [routerLink]="['/system', 'contact-page']" role="listitem">Contact</mat-list-item>
+          <mat-list-item [routerLink]="['/system', 'main-landing']" role="listitem" routerLinkActive="active">
+            Home
+          </mat-list-item>
+          <mat-list-item [routerLink]="['/system', 'about-page']" role="listitem" routerLinkActive="active">
+            About
+          </mat-list-item>
+          <mat-list-item [routerLink]="['/system', 'projects-page']" role="listitem" routerLinkActive="active">
+            Work
+          </mat-list-item>
+          <mat-list-item role="listitem" routerLinkActive="active">
+            Process
+          </mat-list-item>
+          <mat-list-item role="listitem" routerLinkActive="active">
+            Services
+          </mat-list-item>
+          <mat-list-item [routerLink]="['/system', 'contact-page']" role="listitem" routerLinkActive="active">
+            Contact
+          </mat-list-item>
         </mat-list>
       </nav>
     </header>
