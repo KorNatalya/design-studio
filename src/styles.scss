@@ -9,9 +9,10 @@
   font-family: 'Muli', sans-serif;
 }
 
+
 body {
   height: 100%;
-  width: 100%;
+  min-width: 100%;
   color: #4a4a4a;
 }
 
@@ -36,7 +37,7 @@ a:hover {
 }
 
 mat-list-item {
-  border:none;
+  border: none;
   outline: none;
 }
 

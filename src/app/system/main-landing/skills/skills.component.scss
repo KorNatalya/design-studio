@@ -16,7 +16,6 @@
       width: 650px;
       h2 {
         margin-bottom: 30px;
-
       }
 
       p {
@@ -24,7 +23,20 @@
         text-transform: uppercase;
       }
     }
-
   }
 }
+@media screen and (max-width: 768px) {
 
+  .container {
+    width: 768px;
+    .progress-bars {
+
+      width: 550px;
+
+      mat-progress-bar {
+        width: 500px;
+      }
+    }
+  }
+
+}

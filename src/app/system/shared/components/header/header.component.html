@@ -7,26 +7,26 @@
         </a>
       </div>
       <nav>
-        <mat-list role="list">
-          <mat-list-item [routerLink]="['/system', 'main-landing']" role="listitem" routerLinkActive="active">
+        <ul class="nav__list">
+          <li [routerLink]="['/system', 'main-landing']" class="nav__item" routerLinkActive="active">
             Home
-          </mat-list-item>
-          <mat-list-item [routerLink]="['/system', 'about-page']" role="listitem" routerLinkActive="active">
+          </li>
+          <li [routerLink]="['/system', 'about-page']" class="nav__item" routerLinkActive="active">
             About
-          </mat-list-item>
-          <mat-list-item [routerLink]="['/system', 'projects-page']" role="listitem" routerLinkActive="active">
+          </li>
+          <li [routerLink]="['/system', 'projects-page']" class="nav__item" routerLinkActive="active">
             Work
-          </mat-list-item>
-          <mat-list-item role="listitem" routerLinkActive="active">
+          </li>
+          <li class="nav__item" routerLinkActive="active">
             Process
-          </mat-list-item>
-          <mat-list-item role="listitem" routerLinkActive="active">
+          </li>
+          <li class="nav__item" routerLinkActive="active">
             Services
-          </mat-list-item>
-          <mat-list-item [routerLink]="['/system', 'contact-page']" role="listitem" routerLinkActive="active">
+          </li>
+          <li [routerLink]="['/system', 'contact-page']" class="nav__item" routerLinkActive="active">
             Contact
-          </mat-list-item>
-        </mat-list>
+          </li>
+        </ul>
       </nav>
     </header>
   </div>

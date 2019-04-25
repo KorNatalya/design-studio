@@ -4,6 +4,7 @@
   position: relative;
 
 
+
   .picture-of-product {
     height: 250px;
 
@@ -46,6 +47,16 @@
     .overlay:hover {
       opacity: 1;
       cursor: pointer;
+    }
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    width: 768px;
+    .picture-of-product {
+      height: 200px;
     }
   }
 }

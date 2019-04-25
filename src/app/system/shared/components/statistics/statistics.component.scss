@@ -29,3 +29,35 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+
+  .statistics {
+    height: 200px;
+    padding: 20px;
+
+    .mat-list {
+      width: 590px;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      font-size: 14px;
+      padding: 0;
+
+
+      .mat-list-item {
+        width: 230px;
+        padding: 0;
+
+        h3 {
+          font-size: 18px;
+        }
+
+        p {
+          font-size: 14px;
+        }
+
+      }
+    }
+  }
+}
