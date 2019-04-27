@@ -25,7 +25,7 @@ export class RangeOfServicesComponent {
     },
     {
       header: 'quos sit vero',
-      text: 'Explicabo hic iste, sit amet iusto voluptatem maxime necessitatibus',
+      text: 'Explicabo hic iste, sit amet iusto voluptatem necessitatibus',
       cols: 1,
       rows: 1,
       image: 'whatshot'
@@ -53,7 +53,7 @@ export class RangeOfServicesComponent {
     },
     {
       header: 'dolor sit amet',
-      text: 'Sciunt nulla quae quaerat, quam repellendus reprehenderit vel voluptatem',
+      text: 'Sciunt nulla quae quaerat, quam reprehenderit vel voluptatem',
       cols: 1,
       rows: 1,
       image: 'pages'
@@ -67,7 +67,7 @@ export class RangeOfServicesComponent {
     },
     {
       header: 'adipisicing elit',
-      text: 'Expedita explicabo hic iste, iusto maxime necessitatibus nesciunt',
+      text: 'Expedita explicabo hic iste, maxime necessitatibus nesciunt',
       cols: 1,
       rows: 1,
       image: 'toys'

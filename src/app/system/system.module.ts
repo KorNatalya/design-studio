@@ -30,6 +30,7 @@ import { StatisticsComponent } from './shared/components/statistics/statistics.c
 import { ProjectsComponent } from './shared/components/projects/projects.component';
 import { ImageViewerComponent } from './shared/components/projects/image-viewer/image-viewer.component';
 import { RangeOfServicesComponent } from './main-landing/range-of-services/range-of-services.component';
+import { ClientsComponent } from './main-landing/clients/clients.component';
 
 @NgModule({
   imports: [
@@ -66,6 +67,7 @@ import { RangeOfServicesComponent } from './main-landing/range-of-services/range
     ProjectsComponent,
     ImageViewerComponent,
     RangeOfServicesComponent,
+    ClientsComponent,
   ],
   providers: [],
   entryComponents: [

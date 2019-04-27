@@ -1,0 +1,9 @@
+<div class="wrapper">
+  <mat-list>
+    <mat-list-item *ngFor="let client of clients">
+      <div class="logotype__item">
+        <img [src]="client.picture" [alt]="client.alt">
+      </div>
+    </mat-list-item>
+  </mat-list>
+</div>
