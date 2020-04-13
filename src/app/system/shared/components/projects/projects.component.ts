@@ -32,7 +32,6 @@ export class ProjectsComponent implements OnInit {
   ];
 
   private getSmallImage(id: number) {
-    console.log(id);
     return this.imgUrl + id + '_small.jpg';
   }
 

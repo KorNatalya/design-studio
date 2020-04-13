@@ -3,10 +3,10 @@ form {
   flex-direction: column;
   min-width: 500px;
 
-
   .form-row {
     display: flex;
     flex-flow: row nowrap;
+    margin-bottom: 20px;
 
     .mat-form-field {
       width: 50%;

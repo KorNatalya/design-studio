@@ -1,6 +1,6 @@
 <div class="wrapper">
-  <carousel [noPause]="noPause" class="carousel" >
-    <slide  *ngFor="let item of items">
+  <carousel [noPause]="noPause" class="carousel">
+    <slide *ngFor="let item of items">
       <div class="text-center py-5 text-white">
         <h2 class="carousel__text">{{item.h2}}</h2>
         <div class="lead">
@@ -8,7 +8,5 @@
         </div>
       </div>
     </slide>
-
   </carousel>
-
 </div>

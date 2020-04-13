@@ -2,21 +2,29 @@
   <form (ngSubmit)="onSubmit()" [formGroup]="profileForm">
     <div class="form-row">
       <mat-form-field>
-        <input formControlName="name" matInput placeholder="Your Name">
+        <input formControlName="username" matInput placeholder="Your Name">
+        <mat-error
+          *ngIf="!profileForm.get('username').valid && profileForm.get('username').touched"
+          class="help-block">Please enter your name
+        </mat-error>
       </mat-form-field>
       <mat-form-field>
-        <input [formControl]="email" matInput placeholder="Enter your email" required>
-        <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+        <input formControlName="email" matInput placeholder="Enter your email">
+        <mat-error
+          *ngIf="!profileForm.get('email').valid && profileForm.get('email').touched"
+          class="help-block">Please enter a valid email
+        </mat-error>
       </mat-form-field>
     </div>
-
     <mat-form-field>
-      <input formControlName="title" matInput placeholder="Your Title">
+      <textarea formControlName="message" matInput placeholder="Your message" rows="6"></textarea>
+      <mat-error
+        *ngIf="!profileForm.get('message').valid && profileForm.get('message').touched"
+        class="help-block">Please enter your message
+      </mat-error>
     </mat-form-field>
-
-    <mat-form-field>
-      <textarea formControlName="comment" matInput placeholder="Your Comment" rows="6"></textarea>
-    </mat-form-field>
-    <button color="primary" mat-raised-button type="submit">Send Message</button>
+    <button [disabled]="!profileForm.valid" color="primary" mat-raised-button type="submit">
+      Send Message
+    </button>
   </form>
 </div>

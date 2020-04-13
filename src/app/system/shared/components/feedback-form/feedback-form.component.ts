@@ -1,32 +1,23 @@
-import { Component } from '@angular/core';
-import {FormBuilder, FormControl, Validators} from '@angular/forms';
+import {Component, OnInit} from '@angular/core';
+import {FormControl, FormGroup, Validators} from '@angular/forms';
 
 @Component({
-  selector: 'app-feedback-form',
-  templateUrl: './feedback-form.component.html',
-  styleUrls: ['./feedback-form.component.scss']
+    selector: 'app-feedback-form',
+    templateUrl: './feedback-form.component.html',
+    styleUrls: ['./feedback-form.component.scss']
 })
-export class FeedbackFormComponent {
-  profileForm = this.fb.group({
-    name: [''],
-    email: ['', Validators.required],
-    title: [''],
-    comment: [''],
-  });
+export class FeedbackFormComponent implements OnInit {
+    profileForm: FormGroup;
 
-  email = new FormControl('', [Validators.required, Validators.email]);
+    ngOnInit() {
+        this.profileForm = new FormGroup({
+            'username': new FormControl(null, Validators.required),
+            'email': new FormControl(null, [Validators.required, Validators.email]),
+            'message': new FormControl(null, Validators.required),
+        });
+    }
 
-  constructor(private fb: FormBuilder) {
-  }
-
-  getErrorMessage() {
-    return this.email.hasError('required') ? 'You must enter a value' :
-      this.email.hasError('email') ? 'Not a valid email' :
-        '';
-  }
-
-  onSubmit() {
-    // TODO: Use EventEmitter with form value
-    console.warn(this.profileForm.value);
-  }
+    onSubmit() {
+        console.log(this.profileForm.value);
+    }
 }

@@ -12,13 +12,13 @@ export interface Slide {
 })
 export class CarouselComponent {
   public items: Slide[] = [{
-    h2: 'Dolor esse exercitationem voluptatem! Architecto aspernatur dicta ducimus explicabo facilis.',
+    h2: 'Beatae excepturi, explicabo! Architecto aspernatur dicta ducimus consectetur adipisicing elit.',
     p: 'Walla vitae elit libero'
   }, {
-    h2: 'Architecto aspernatur dicta. Dolor esse exercitationem voluptatem! Ducimus explicabo facilis.',
+    h2: 'Architecto aspernatur dicta. Dolor porro quaerat sint tempora! Ducimus explicabo facilis.',
     p: 'Nulla vitae elit libero'
   }, {
-    h2: 'Dolor esse exercitationem voluptatem! Architecto aspernatur dicta ducimus explicabo facilis.',
+    h2: 'Dolor esse exercitate voluptatem! Architecto aspernatur dicta cumque debitis dolor eveniet.',
     p: 'Vitae elit libero'
   },
   ];
