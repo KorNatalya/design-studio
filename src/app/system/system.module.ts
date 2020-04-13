@@ -7,14 +7,14 @@ import { AboutUsComponent } from './main-landing/about-us/about-us.component';
 import { SkillsComponent } from './main-landing/skills/skills.component';
 import { PortfolioComponent } from './main-landing/portfolio/portfolio.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
-import {
-  MatButtonModule, MatDialogModule,
-  MatFormFieldModule,
-  MatGridListModule,
-  MatIconModule, MatInputModule,
-  MatListModule,
-  MatProgressBarModule
-} from '@angular/material';
+import { MatButtonModule } from '@angular/material/button';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatIconModule } from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input';
+import { MatListModule } from '@angular/material/list';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { FormComponent } from './main-landing/form/form.component';
 import {ReactiveFormsModule} from '@angular/forms';
 import {MainLandingComponent} from './main-landing/main-landing.component';
