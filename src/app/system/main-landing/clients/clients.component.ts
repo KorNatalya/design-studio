@@ -8,7 +8,7 @@ export interface Clients {
 @Component({
   selector: 'app-clients',
   templateUrl: './clients.component.html',
-  styleUrls: ['./clients.component.scss']
+  styleUrls: ['./clients.component.scss'],
 })
 export class ClientsComponent {
   logotypeAddress = '../../../assets/logotypes/';
@@ -16,21 +16,21 @@ export class ClientsComponent {
   clients: Clients[] = [
     {
       picture: this.logotypeAddress + '1.jpg',
-      alt: 'Wild & Free'
+      alt: 'Wild & Free',
     },
     {
       picture: this.logotypeAddress + '2.jpg',
-      alt: 'Atlantic Ocean'
+      alt: 'Atlantic Ocean',
     },
     {
       picture: this.logotypeAddress + '3.jpg',
-      alt: 'The Black Fox'
+      alt: 'The Black Fox',
     },
     {
       picture: this.logotypeAddress + '4.jpg',
-      alt: 'Native'
+      alt: 'Native',
     },
   ];
 
-  constructor() { }
+  constructor() {}
 }

@@ -1,7 +1,6 @@
-import {Component, OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import {ImageViewerComponent} from './image-viewer/image-viewer.component';
-
+import { ImageViewerComponent } from './image-viewer/image-viewer.component';
 
 export interface Tile {
   cols: number;
@@ -12,39 +11,37 @@ export interface Tile {
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
-  styleUrls: ['./projects.component.scss']
+  styleUrls: ['./projects.component.scss'],
 })
 export class ProjectsComponent implements OnInit {
-  private readonly imgUrl = '../../../../assets/products/';
   tiles: Tile[] = [
-    {cols: 1, rows: 1, id: 1},
-    {cols: 1, rows: 1, id: 2},
-    {cols: 1, rows: 1, id: 3},
-    {cols: 1, rows: 1, id: 4},
-    {cols: 1, rows: 1, id: 5},
-    {cols: 1, rows: 1, id: 6},
-    {cols: 1, rows: 1, id: 7},
-    {cols: 1, rows: 1, id: 8},
-    {cols: 1, rows: 1, id: 9},
-    {cols: 1, rows: 1, id: 10},
-    {cols: 1, rows: 1, id: 11},
-    {cols: 1, rows: 1, id: 12},
+    { cols: 1, rows: 1, id: 1 },
+    { cols: 1, rows: 1, id: 2 },
+    { cols: 1, rows: 1, id: 3 },
+    { cols: 1, rows: 1, id: 4 },
+    { cols: 1, rows: 1, id: 5 },
+    { cols: 1, rows: 1, id: 6 },
+    { cols: 1, rows: 1, id: 7 },
+    { cols: 1, rows: 1, id: 8 },
+    { cols: 1, rows: 1, id: 9 },
+    { cols: 1, rows: 1, id: 10 },
+    { cols: 1, rows: 1, id: 11 },
+    { cols: 1, rows: 1, id: 12 },
   ];
+  private readonly imgUrl = '../../../../assets/products/';
 
-  private getSmallImage(id: number) {
-    return this.imgUrl + id + '_small.jpg';
-  }
-
-  constructor(public dialog: MatDialog) {
-  }
+  constructor(public dialog: MatDialog) {}
 
   openModal(id: number): void {
     this.dialog.open(ImageViewerComponent, {
-      data: {img: this.getLargeImage(id)}
+      data: { img: this.getLargeImage(id) },
     });
   }
 
-  ngOnInit() {
+  ngOnInit() {}
+
+  private getSmallImage(id: number) {
+    return this.imgUrl + id + '_small.jpg';
   }
 
   private getLargeImage(id: number) {

@@ -9,7 +9,7 @@ export interface Section {
 @Component({
   selector: 'app-statistics',
   templateUrl: './statistics.component.html',
-  styleUrls: ['./statistics.component.scss']
+  styleUrls: ['./statistics.component.scss'],
 })
 export class StatisticsComponent implements OnInit {
   folders: Section[] = [
@@ -27,18 +27,15 @@ export class StatisticsComponent implements OnInit {
       number: 490,
       description: 'Positive Feedback',
       icon: 'grade',
-    }
-    ,
+    },
     {
       number: 645,
       description: 'Happy Clients',
       icon: 'favorite_border',
-    }
+    },
   ];
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }
